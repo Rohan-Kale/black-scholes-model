@@ -6,7 +6,6 @@ def get_stock_price(ticker):
     S = ticker.history(period="1mo")["Close"].iloc[-1]
     return S
 
-
 def get_risk_free_rate():
     r = yf.Ticker("^IRX").history(period="1mo")["Close"].iloc[-1] / 100
     return r

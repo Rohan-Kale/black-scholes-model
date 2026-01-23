@@ -6,6 +6,13 @@ import datetime as dt
 import sys
 import os
 
+
+'''TODO: reverse engineer IV value
+        modularize UI, should not be asking about strike price and stuff in this file
+        '''
+
+
+
 # gain access to greek variables
 src_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
